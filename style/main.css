@@ -1,0 +1,37 @@
+h1 {
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    width: 640px;
+    margin: 10px 10px 50px 10px;
+    
+}
+p {
+    margin: 10px;
+}
+.date  {
+    margin: 20px 10px 20px 10px;
+}
+img {
+    margin: 20px 10px 0px 10px;
+}
+h3 {
+    margin: 20px 10px;
+}
+ul {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+li {
+    margin: 10px;
+}
+.wrap {
+    display: inline-block;
+}
+.child-1 {
+    position: absolute;
+    top: 40%;
+    left: 18%;
+    color: red;
+    font-size: 30px;
+    font-weight: 700;
+}
