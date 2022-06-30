@@ -1,178 +1,38 @@
-html {
-    font-family: Blanco,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
-    font-size: clamp(12px,.8rem + .25vw,20px);
-    font-weight: 400;
-    line-height: 1.7;
-    color: #fff;
+.block {
+    border: 3px double black;
 }
-header {
-    background-color: black;
-    display: flex;
-    flex-wrap: wrap; 
+.block:hover div:nth-child(2n) {
+    background-color: yellow;
 }
-header > div.header-smile > a > img {
-    height: 50px;
-    width: 380px;
+.block:hover div:nth-child(2n-1) {
+    background-color: blue;
 }
-header > div > ul {
-    display: flex;
-    height: 100%;
-    list-style: none;
-    padding-inline-start: 20px;
-    height: 20px;
-    margin: 10px 10px 20px;
-}
-header > div > ul > li > a {
-    text-decoration: none;
-}
-header > div > ul > li {
-    padding: 0 10px;
-}
-header > div > ul > li > a > span {
-    color: white;
-    margin-left: 10px;
-    font-size: 13px;
-    font-weight: 700;
-    font-family: MD Primer Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
-}
-.pages-wrap {
-    padding: 30px 32px 0;
-    background-color: #262626;
-}
-.mini-wall {
-    opacity: 0.5;
-    color:#fff;
-}
-.pages-wrap > span > a {
-    color: #fff;
-    text-decoration: none;
-}
-.pages-wrap > span {
+.block:hover div:not(.not-color) {
+    color: red;
+    font-size: 30px;
     font-weight: bold;
-    font-family: MD Primer Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
 }
-h1 {
-    font-weight: bold;
-    color: #fff;
-    font-size: 40px;
-    margin: 0 0 23px 0;
-    font-family: MD Primer Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
-}
-.pages-wrap > div > a > img {
-    max-width: 100%;
-}
-.avatar {
-    width: 40px;
+.block > div {
+    border: 1px solid blue;
     height: 40px;
-    border-radius: 50%;
 }
-.author-row {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+.block > div:nth-child(-n+1) {
+    background-color: gray;
 }
-.Chris {
-    color: #fff;
+.class {
+    border: 2px double red;
+    background-color: pink;
+    color: red;
+    padding: 5px;
 }
-.Chris > a {
-    text-decoration: none;
-    color: #fff;
+.class:empty {
+    display: none;
 }
-.text {
-    margin: 15px 0;
+.button {
+    box-shadow: 3px 4px 3px black;
+    background-color: yellow;
 }
-.text > p {
-    max-width: 700px;
-    font-size: 21px;
-    display: block;
-
-}
-.content {
-    margin-top: 50px;
-    padding: 62px;
-    background-color: #fff;
-    border-radius: 8px;
-}
-.header-content {
-    display: flex;
-    gap: 2rem;
-    justify-content: space-evenly;
-}
-.part {
-    padding: 32px;
-    background-color: #fef6ec;
-    border-radius: 8px;
-
-}
-.part > ol > li {
-    margin: 0 0 5px;
-    font-size: 19px;
-    counter-increment: article-series-counter;
-}
-.part > ol > li > a {
-    text-decoration: none;
-    color: rgb(27, 167, 227);
-}
-.part > ol > li::before {
-    color: #000;
-    content: "Part " counter(article-series-counter) ": ";
-}
-.part > ol {
-    list-style: none;
-    line-height: 30px;
-    padding: 31px 31px 31px 23px;
-    width: 305px; 
-    margin: 0;
-}
-.part-2 {
-    display: flex;
-    padding: 31px;
-    margin: 0 40px;
-    box-sizing: border-box;
-    max-height: 360px;
-    width: 420px;
-    background-color: #fffcf6;
-    border: 1px solid black;
-    border-radius: 8px;
-}
-.part-2 > div > div > h4 {
-    color: #000;
-    font-size: 25px;
-    margin: 0 0 12.5px;
-    width: 146px;
-    line-height: 25px;
-}
-.part-2 > div > div > p {
-    display: block;
-    color: #000;
-    margin: 0 0 23px;
-    width: 146px;
-    font-size: 17px;
-}
-.buttom {
-    padding: 15px 23px;
-    background-color: #5e5e5e;
-    border-radius: 4px;
-    border-bottom: 2px solid black;
-    border-right: 2px solid black;
-    width: 250px;
-    box-sizing: border-box;
-    text-align: center;
-    font-weight: 700;
-    font-size: 19px;
-    white-space: nowrap;
-}
-.buttom > a {
-    text-decoration: none;
-    color: #fff;
-    
-}
-.block-column {
-    flex: 1000px;
-    min-width: 0;
-}
-.block-column > img {
-    display: block;
-    width: 147px;
-    height: 147px;
+.button:hover {
+    box-shadow: 1px 2px 4px gray;
+    background-color: pink;
 }
