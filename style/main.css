@@ -198,7 +198,6 @@
         box-shadow: 5px 9px 20px rgb(0 0 0 / 15%);
     }
     .sidebar {
-        flex-wrap: wrap;
         background: #1e2939;
         width: 200px;
         padding-top: 20px;
@@ -278,12 +277,11 @@
         color: #b5b9be;
     }
     .about-me {
-        flex-wrap: wrap;
         padding-right: 25px;
         padding-left: 25px;
         padding-top: 50px;
         padding-bottom: 50px;
-        min-width: 320px;
+        min-width: 280px;
     }
     .profession {
         font-size: 14px;
