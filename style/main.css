@@ -283,6 +283,7 @@
         padding-left: 25px;
         padding-top: 50px;
         padding-bottom: 50px;
+        min-width: 320px;
     }
     .profession {
         font-size: 14px;
