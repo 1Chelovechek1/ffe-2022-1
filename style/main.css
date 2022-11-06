@@ -1,4 +1,4 @@
- body {   
+body {   
     background: #f5f7fa;
     padding-left: 20px;
     padding-right: 20px;
@@ -35,7 +35,7 @@
     margin-bottom: 20px;
 }
 .contacts-title-type {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 700;
     line-height: 24px;
     color: #ffffff;
@@ -97,6 +97,9 @@
     padding-left: 90px;
     padding-top: 110px;
     padding-bottom: 110px;
+}
+.fa-regular {
+    font-size: 1em;
 }
 .profession {
     font-size: 14px;
@@ -190,10 +193,18 @@
     margin-top: 15px;
 }
 @media screen and (max-width: 600px) {
+    body {   
+        background: #f5f7fa;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        font-family: Montserrat;
+    }
     .list {
         background: white;
         display: flex;
-        max-width: 600px;
+        max-width: 530px;
         margin: 0 auto;
         box-shadow: 5px 9px 20px rgb(0 0 0 / 15%);
     }
@@ -219,7 +230,7 @@
         margin-bottom: 20px;
     }
     .contacts-title-type {
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 700;
         line-height: 24px;
         color: #ffffff;
