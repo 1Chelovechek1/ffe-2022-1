@@ -1,0 +1,132 @@
+body, html {
+    margin: 0;
+}
+.cont {
+    display: flex;
+    justify-content: center;
+    .hero {
+        background-image: url("https://funart.pro/uploads/posts/2021-04/thumbs/1618497715_39-funart_pro-p-oboi-fon-anime-tyanka-42.png");
+        background-size: 101% 700px;
+        background-repeat: no-repeat;
+        height: 700px;
+        width: 70%;
+        position: relative;
+        border: 5px solid black;
+        top: 20px;
+        
+        .one {
+            width: 45%;
+            background-color: yellow;
+            position: absolute;
+            top: 50px;
+            left: 100px;
+            border: 3px solid black;
+        }
+        .two {
+            width: 45%;
+            background-color: red;
+            position: absolute;
+            top: 300px;
+            left: 100px;
+            border: 3px solid black;
+        }
+        button {
+            background-color: gray;
+            position: absolute;
+            font-weight: 900;
+            font-size: 30px;
+            bottom: 15px;
+            right: 15px;
+            color: black;
+            border: 5px solid black;
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .cont {
+        display: flex;
+        justify-content: center;
+        .hero {
+            background-image: url("https://funart.pro/uploads/posts/2021-04/thumbs/1618497715_39-funart_pro-p-oboi-fon-anime-tyanka-42.png");
+            background-size: cover;
+            background-position: -300px 0px;
+            height: 700px;
+            width: 80%;
+            position: relative;
+            border: 5px solid black;
+            top: 20px;
+            
+            .one {
+                width: 80%;
+                background-color: yellow;
+                position: absolute;
+                top: 50px;
+                left: 50px;
+                right: 50px;
+                border: 3px solid black;
+            }
+            .two {
+                width: 80%;
+                background-color: red;
+                position: absolute;
+                top: 250px;
+                left: 50px;
+                border: 3px solid black;
+            }
+            button {
+                background-color: gray;
+                position: absolute;
+                font-weight: 700;
+                font-size: 25px;
+                bottom: 15px;
+                right: 15px;
+                color: black;
+                border: 5px solid black;
+            }
+        }
+    }
+}
+@media screen and (max-width: 700px) {
+    .cont {
+        display: flex;
+        justify-content: center;
+        .hero {
+            background-image: url("https://funart.pro/uploads/posts/2021-04/thumbs/1618497715_39-funart_pro-p-oboi-fon-anime-tyanka-42.png");
+            background-size: cover;
+            background-position: -600px 100px;
+            background-repeat: no-repeat;
+            height: 700px;
+            width: 80%;
+            position: relative;
+            border: 5px solid black;
+            top: 20px;
+            
+            .one {
+                width: 100%;
+                background-color: yellow;
+                position: static;
+                border: 0;
+            }
+            .two {
+                width: 100%;
+                background-color: red;
+                position: static;
+                border: 0;
+            }
+            button {
+                background-color: gray;
+                position: absolute;
+                font-weight: 900;
+                font-size: 30px;
+                width: 100%;
+                bottom: 0px;
+                right: 0px;
+                color: black;
+                border-top: 5px solid black;
+                border-bottom: none;
+                border-left: 0;
+                border-right: 0;
+            }
+        }
+    }
+}
