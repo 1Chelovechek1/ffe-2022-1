@@ -1,132 +1,128 @@
-body, html {
+
+body { 
     margin: 0;
+  }
+.hm {
+    text-align: center; 
+    color: #fcbe24;
 }
-.cont {
-    display: flex;
-    justify-content: center;
-    .hero {
-        background-image: url("https://funart.pro/uploads/posts/2021-04/thumbs/1618497715_39-funart_pro-p-oboi-fon-anime-tyanka-42.png");
-        background-size: 101% 700px;
-        background-repeat: no-repeat;
-        height: 700px;
-        width: 70%;
+ .ban321 {
+    // display: flex;
+ 
+    .test1 {
+        width: 190px;
+        height: 65px;
+        background-color: black;
+        font-weight: 900;
+        font-size: 50px;
+        color: green;
         position: relative;
-        border: 5px solid black;
-        top: 20px;
-        
-        .one {
-            width: 45%;
-            background-color: yellow;
-            position: absolute;
-            top: 50px;
-            left: 100px;
-            border: 3px solid black;
+        animation: nani linear 5s infinite;
+    }
+    .test2 {
+        width: 190px;
+        height: 52px;
+        background-color: blue;
+        font-weight: 900;
+        color: yellow;
+        font-size: 40px;
+        position: relative;
+        animation: nana linear 5s infinite;
+    }
+    .test3 {
+        width: 190px;
+        height: 40px;
+        background-color: green;
+        font-weight: 900;
+        color: white;
+        font-size: 30px;
+        position: relative;
+        animation: nano linear 5s infinite;
+    }
+    .wobble {
+        -webkit-animation-name: wobble;
+        animation-name: wobble;
+        font-size: 50px;
+    }
+    @keyframes nani {
+        0% {
+            top: 0px; 
+            left: 0px;
+            transform: rotate(0deg);
         }
-        .two {
-            width: 45%;
-            background-color: red;
-            position: absolute;
-            top: 300px;
+        25% {
+            top: 0px; 
             left: 100px;
-            border: 3px solid black;
+            transform: rotate(90deg);
         }
-        button {
-            background-color: gray;
-            position: absolute;
-            font-weight: 900;
-            font-size: 30px;
-            bottom: 15px;
-            right: 15px;
-            color: black;
-            border: 5px solid black;
+        50% {
+            top: 100px; 
+            left: 100px;
+            transform: rotate(180deg);
+        }
+        75% {
+            top: 100px; 
+            left: 0px;
+            transform: rotate(270deg);
+        }
+        100% {
+            top: 0px; 
+            left: 0px;
+            transform: rotate(360deg);
         }
     }
-}
-@media screen and (max-width: 1200px) {
-    .cont {
-        display: flex;
-        justify-content: center;
-        .hero {
-            background-image: url("https://funart.pro/uploads/posts/2021-04/thumbs/1618497715_39-funart_pro-p-oboi-fon-anime-tyanka-42.png");
-            background-size: cover;
-            background-position: -300px 0px;
-            height: 700px;
-            width: 80%;
-            position: relative;
-            border: 5px solid black;
-            top: 20px;
-            
-            .one {
-                width: 80%;
-                background-color: yellow;
-                position: absolute;
-                top: 50px;
-                left: 50px;
-                right: 50px;
-                border: 3px solid black;
-            }
-            .two {
-                width: 80%;
-                background-color: red;
-                position: absolute;
-                top: 250px;
-                left: 50px;
-                border: 3px solid black;
-            }
-            button {
-                background-color: gray;
-                position: absolute;
-                font-weight: 700;
-                font-size: 25px;
-                bottom: 15px;
-                right: 15px;
-                color: black;
-                border: 5px solid black;
-            }
+    @keyframes nana {
+        0% {
+            top: 0px; 
+            left: 0px;
+            transform: rotate(0deg);
+        }
+        25% {
+            top: 0px; 
+            left: 100px;
+            transform: rotate(90deg);
+        }
+        50% {
+            top: -20px; 
+            left: 100px;
+            transform: rotate(180deg);
+        }
+        75% {
+            top: -20px; 
+            left: 0px;
+            transform: rotate(270deg);
+        }
+        100% {
+            top: 0px; 
+            left: 0px;
+            transform: rotate(360deg);
         }
     }
-}
-@media screen and (max-width: 700px) {
-    .cont {
-        display: flex;
-        justify-content: center;
-        .hero {
-            background-image: url("https://funart.pro/uploads/posts/2021-04/thumbs/1618497715_39-funart_pro-p-oboi-fon-anime-tyanka-42.png");
-            background-size: cover;
-            background-position: -600px 100px;
-            background-repeat: no-repeat;
-            height: 700px;
-            width: 80%;
-            position: relative;
-            border: 5px solid black;
-            top: 20px;
-            
-            .one {
-                width: 100%;
-                background-color: yellow;
-                position: static;
-                border: 0;
-            }
-            .two {
-                width: 100%;
-                background-color: red;
-                position: static;
-                border: 0;
-            }
-            button {
-                background-color: gray;
-                position: absolute;
-                font-weight: 900;
-                font-size: 30px;
-                width: 100%;
-                bottom: 0px;
-                right: 0px;
-                color: black;
-                border-top: 5px solid black;
-                border-bottom: none;
-                border-left: 0;
-                border-right: 0;
-            }
+    @keyframes nano {
+        0% {
+            bottom: 0px; 
+            left: 0px;
+            transform: rotate(360deg);
+        }
+        25% {
+            bottom: 0px; 
+            left: 100px;
+            transform: rotate(270deg);
+        }
+        50% {
+            bottom: 110px; 
+            left: 100px;
+            transform: rotate(180deg);
+        }
+        75% {
+            bottom: 100px; 
+            left: 0px;
+            transform: rotate(90deg);
+        }
+        100% {
+            bottom: 0px; 
+            left: 0px;
+            transform: rotate(0deg);
         }
     }
 }
