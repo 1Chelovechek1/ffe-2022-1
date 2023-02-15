@@ -1,15 +1,12 @@
-.test-up {
+body {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  height: 900px;
-}
-.test-up .test {
-  display: flex;
-  height: 100px;
-  width: 100px;
-  border: 5px solid black;
-  color: red;
   justify-content: center;
-  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.above {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */
