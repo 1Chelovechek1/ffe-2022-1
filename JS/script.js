@@ -1,43 +1,26 @@
-const door = document.querySelector('.door');
-const opena = document.querySelector('.open');
-const clos = document.querySelector('.close');
-const signal = document.querySelector('.signal');
-const on = document.querySelector('.on');
-const off = document.querySelector('.off');
-const alerts = document.querySelector('.alert');
-  
-let visOne = false;
-let vısTwo = false;
+let input = document.querySelector(".input");
 
-signal.addEventListener('click', function num() {
-    vısTwo = !vısTwo
-    on.style.display = vısTwo ? 'none' : 'block';
-    off.style.display = vısTwo ? 'block' : 'none';
-    if(opena.style.display == 'block' && alerts.style.display == 'block'){
-         on.style.display = 'none';
-         alerts.style.display = 'none'
-         off.style.display = 'block';
-    }else if(opena.style.display == 'block' && on.style.display == 'block'){
-        alerts.style.display = 'block';
-        on.style.display = 'none';
-        off.style.display = 'none';
-    }
-
-    
-
-    
-})
-door.addEventListener('click', function() {
-    visOne = !visOne
-    clos.style.display = visOne ? 'none' : 'block';
-    opena.style.display = visOne ? 'block' : 'none';
-    if(opena.style.display == 'block' && on.style.display == 'block'){
-      alerts.style.display = 'block';
-      on.style.display = 'none';
-      off.style.display = 'none';
-    }else if(opena.style.display == 'none' && alerts.style.display == 'block'){
-      alerts.style.display = 'none'
-      off.style.display = 'none';
-      on.style.display = 'block';
-    }
-})
+function insert(num) {
+  if(input.textContent == 0) {
+    input.textContent = "";
+    input.textContent = input.textContent + num;
+  } else {
+    input.textContent = input.textContent + num;
+  }
+}
+function clean() {
+  input.textContent = "0"
+}
+function back() {
+  let exp = input.textContent;
+  input.textContent = exp.substring(0, exp.length - 1);
+  if(input.textContent == 0) {
+    input.textContent = "0";
+  }
+}
+function equal() {
+  let exp = input.textContent;
+  if (exp) {
+    input.textContent = eval(exp);
+  }
+}
