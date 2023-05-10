@@ -1,26 +1,10 @@
-let input = document.querySelector(".input");
+let but = document.querySelector('.showName');
+let p = document.querySelector('.result');
 
-function insert(num) {
-  if(input.textContent == 0) {
-    input.textContent = "";
-    input.textContent = input.textContent + num;
-  } else {
-    input.textContent = input.textContent + num;
-  }
-}
-function clean() {
-  input.textContent = "0"
-}
-function back() {
-  let exp = input.textContent;
-  input.textContent = exp.substring(0, exp.length - 1);
-  if(input.textContent == 0) {
-    input.textContent = "0";
-  }
-}
-function equal() {
-  let exp = input.textContent;
-  if (exp) {
-    input.textContent = eval(exp);
-  }
-}
+but.addEventListener('click', function() {
+  let a = document.querySelector('.firstName').value;
+  let b = document.querySelector('.lastName').value;
+  let c = document.querySelector('.middleName').value;
+  p.innerText = `${a} ${b.toUpperCase().substring(0, 1)}. ${c.toUpperCase().substring(0, 1)}.`;
+  
+});
